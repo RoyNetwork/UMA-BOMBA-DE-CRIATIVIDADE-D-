@@ -1,0 +1,73 @@
+CREATE TABLE Livros (
+ id int,
+ titulo varchar (45), 
+ autor varchar (45),
+ editora varchar (45),
+ ano int (45), 
+ status bool
+ );
+ 
+CREATE TABLE Usuarios (
+id int, 
+nome varchar (45),
+ email varchar (45),
+ telefone varchar (45)
+ );
+ 
+CREATE TABLE Emprestimos (
+ id int,
+ livro_id int,
+ usuario_id int,
+ data_emprestimo date,
+ data_devolucao date, 
+ status bool
+ );
+ 
+ 
+ INSERT INTO Livros 
+ 
+ (id, título, autor, editora, ano) VALUES
+ 
+ (01, 'Um dia no Minecraft', 'Quenya', 'Livros Que Demais', '2021'),
+ (02, 'As aventuras de Ninxinrran', 'Ninxinrran Xinwen', 'Palmas Editora', '2012'),
+  (03, 'Às', 'Juana Perez', 'Palmas Editora', '2005'),
+    (04, 'México Mexicado', 'Juana Perez', 'Palmas Editora', '2006'),
+      (05, 'Assas para a imaginação', 'Ciara Nintendo', 'Palmas Editora', '2009'),
+        (06, 'Nichols Jersey', 'Nichols Jersey', 'Palmadas Editora', '1998'),
+          (07, 'Aviadores de ar de cidade', 'Fernando Aviador', 'Los Santos Editora', '2006'),
+            (08, 'A monarquia > do que Democracia <', 'Princesa Muharib', 'Catar Aireditions Top of Top', '2010'),
+              (09, 'Valeu Vôlei!', 'Kenya Sabonete', 'Tickets Editora', '2008'),
+                (10, 'A bombeira do amor, ou quase isso', 'Helena Moonshine', 'Lemanha da Alemanha Editora', '2015'),
+                  (11, 'Da prisão á ascenção ', 'Lavínia Café com Leite', 'Retada Editora', '2013'),
+                    (12, 'Nunca acredite no seu supervisor', 'Andréia Ramos', 'Nigga Editors', '2014'),
+                      (13, 'Mãe solteira: ON', 'Andréia Thompson', 'Palmas Editora', '2000'),
+                        (14, 'Motos? Qualé', 'Fernanda Thompson', 'Dente de leão Editora', '1999'),
+                          (15, 'A arte da sensualidade', 'Flor Ramirez', 'Palmadas Editora', '2006'),
+                            (16, 'Não use o banheiro de casa', 'Lewis Volante', 'Editora Irlandesa', '2017'),
+                              (17, 'Zzz Mas O quê?!', 'Sheikinha Arenossa', 'Sírias Editora', '2003'),
+                                (18, 'Sem paz na joça do front', 'Renato Kawasaki', 'Kawasaki non bikes Editora', '1970'),
+                                  (19, 'Água por favor', 'Garrafél Potável', 'Editora Líquida', '2019'),
+                                    (20, 'A beleza Russa', 'Serpionova Vasiliev', 'Karquiv Editora', '2015'),
+                                      (21, 'A sensual e desejada dança russa', 'Yelena Denisovna', 'Karquiv Editora', '2002');
+ 
+ 
+ INSERT INTO Usuarios 
+ 
+ 
+ (id, nome, email, telefone) VALUES
+ 
+ (01, 'Roy', 'Alanj1636@gmail.com','11-40028922'),
+ (02, 'Hihanna', 'HihannaHinata@gmail.com', '01-8976-9913'),
+  (03, 'Harry Potter', 'HarryPotter223@gmail.com', '01-8680-9913'),
+   (04, 'Carl Johnson', 'CJBADBOY@gmail.com', '01-9986-1222'),
+    (05, 'Claude Speed', 'LittleSpeed333@gmail.com', '01-8826-9003');
+
+        
+ 
+  INSERT INTO Emprestimos 
+  
+  (id, livro_id, usuario_id, data_emprestimo, data_devolucao) VALUES
+  
+  (01, 'Um dia no Minecraft', 'Quenya', '25/03/2023', '30/03/23'),
+  (02, 'As aventuras de Ninxinrran', 'Tha-wu-ane', '27/02/2023', '31/03/23'),
+    (03, 'A monarquia > do que Democracia <', 'Tha-wu-ane', '27/02/2023', '10/04/23');
